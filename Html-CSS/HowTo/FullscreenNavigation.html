@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="FullscreenNavigation.css">
+</head>
+
+<body>
+
+
+ <h3>Fullscreen Navigation</h3>       
+<div id="myNav" class="overlay">
+        <div class="imagen"><img class="img" src="nieve.jpg" title="Nieve" alt="Nieve"width="100%" height="100%"></div>
+        <div class="titulo">Titulo</div>
+        <div class="informacion">Informacion</div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+        <a href="#">Precio</a>
+        <a href="#">Reserva</a>
+        <a href="#">Ubicacion</a>
+        <a href="#">Contacto</a>
+ </div>
+</div>
+           
+<span style=";cursor:pointer" onclick="openNav()"><div class="imagenes"><img class="img" src="nieve.jpg" title="Nieve" alt="Nieve"width="100%" height="100%"></span>
+    <div class="texto">Boton</div></div>
+
+<span style=";cursor:pointer" onclick="openNav()"><div class="imagenes"><img class="img" src="nieve.jpg" title="Nieve" alt="Nieve"width="100%" height="100%"></span>
+<div class="texto">Boton2</div> </div>
+    
+
+
+    
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+                              
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+@font-face {
+  font-family: 'My Happy Ending';
+  font-style: normal;
+  font-weight: 400;
+  src: local('My Happy Ending'), local('My Happy Ending'), url("My Happy Ending.ttf") format('truetype');
+}
+
+body {
+  background-image: url("fondo.jpg");
+
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -4.5%;
+  transition: 0.3s;
+  padding: 0.5%;
+  width: 6%;
+  text-decoration: none;
+  text-align: ;
+  font-family: 'My Happy Ending';
+  font-size: 200%;
+  color: black;
+  box-shadow: 5px 5px 5px rgb(95, 95, 95);
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  border-radius: 0  0;
+
+}
+
+#mySidenav a:hover {
+  left: -0.5%;
+}
+
+#Principal {
+  top: 390px;
+  background-color: ;
+}
+
+#Galeria {
+  top: 460px;
+  background-color: ;
+}
+
+#projects {
+  top: 530px;
+  background-color: ;
+}
+
+#contact {
+  top: 600px;
+  background-color: #ffffff00;
+}
+
+
+
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: -359.6px;
+  left: 0px;
+  width: 99%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+div.cabecera {
+  position: relative;
+  left: 0%;
+  width: 101.4%;
+  height: 358px;
+  background-color: white;
+  border: 0px solid #000000;
+}
+
+
+div.borde{   
+  position: relative;
+  left: 0%;
+  width: 100%;
+  height: auto;  
+}
+
+.transition {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.container {
+  float: left;
+  position: relative;
+  width: 390px;
+  height: 390px;
+  left: 10%;
+  margin: 0 auto;
+  margin: 0 ;
+  top: 2  0px;
+}
+
+
+.div-img {
+  display: block;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+
+.div-img .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -webkit-transform: 0px 0px 1;
+  -moz-transform: 0px 0px 1;
+  -ms-transform: 0px 0px 1;
+  -o-transform: 0px 0px 1;
+  transform: 0px 0px 1;
+  transform: translate(0px, 0px) scale(1);
+  -webkit-transform: translate(0px, 0px) scale(1);
+  -moz-transform: translate(0px, 0px) scale(1);
+  -o-transform: translate(0px, 0px) scale(1);
+  -ms-transform: translate(0px, 0px) scale(1);
+  -webkit-transition: all 0s ease 0s;
+  -moz-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+
+.div-img .text {
+  font-family: 'My Happy Ending';
+  font-size: 50px;
+  position: relative;
+  top: -50px;
+  z-index: -1;
+  display: block;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: 0px 0px 1;
+  -moz-transform: 0px 0px 1;
+  -ms-transform: 0px 0px 1;
+  -o-transform: 0px 0px 1;
+  transform: 0px 0px 1;
+  transform: translate(0px, 0px) scale(1);
+  -webkit-transform: translate(00px, 0px) scale(0);
+  -moz-transform: translate(0px, 0px) scale(1);
+  -o-transform: translate(0px, 0px) scale(1);
+  -ms-transform: translate(0px, 0px) scale(1);
+  -webkit-transition: all 0s ease 0s;
+  -moz-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+.div-img:hover .img {
+  -webkit-transform: 0px -30px 0.5;
+  -moz-transform: 0px -30px 0.5;
+  -ms-transform: 0px -30px 0.5;
+  -o-transform: 0px -30px 0.5;
+  transform: 0px -30px 0.5;
+  transform: translate(0px, -30px) scale(0.5);
+  -webkit-transform: translate(0px, -30px) scale(0.5);
+  -moz-transform: translate(0px, -30px) scale(0.5);
+  -o-transform: translate(0px, -30px) scale(0.5);
+  -ms-transform: translate(0px, -30px) scale(0.5);
+  border-radius: 50%;
+}
+
+.div-img:hover .text {
+  -webkit-transform: 0px 0px 2;
+  -moz-transform: 0px 0px 2;
+  -ms-transform: 0px 0px 2;
+  -o-transform: 0px 0px 2;
+  transform: 0px 0px 2;
+  transform: translate(0px, 0px) scale(2);
+  -webkit-transform: translate(0px, 0px) scale(1);
+  -moz-transform: translate(0px, 0px) scale(2);
+  -o-transform: translate(0px, 0px) scale(2);
+  -ms-transform: translate(0px, 0px) scale(2);
+}
+
+
+div.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 3%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#homeb {
+  width: 32px;
+  height: 32px;
+
+}
+
+@media screen and (max-width: 1366px) {
+  #mySidenav a  {
+    float: none;
+    width: 8%;
+    padding: 0.6%;
+    left: -6.5%;
+  } 
+}
+@media screen and (max-width: 800px) {   
+  #mySidenav a  {
+    float: none;
+    width: 11%;
+    padding: 0.6%;
+    left: -10.5%;
+  } 
+
+  div.borde{   
+    position: relative;
+    left: 11%;
+    width: 89.5%;
+    height: auto; 
+  }
+  .container {
+    width: 200px;
+    height: 200px;
+  }
+  .div-img .text {
+
+    font-size: 30px;
+  }
+  div.cabecera {
+    width: 100%;
+    height: 358px;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {   
+  #mySidenav a  {
+    float: none;
+    width: 11%;
+    padding: 0.6%;
+    left: -10.5%;
+  } 
+
+  div.borde{   
+    position: relative;
+    left: 11%;
+    width: 89.5%;
+    height: auto; 
+  }
+  .container {
+    width: 250px;
+    height: 250px;
+  }
+  .div-img .text {
+
+    font-size: 30px;
+  }
+  div.cabecera {
+    width: 101.8%;
+    height: 358px;
+
+  }
+  div.footer {
+    bottom: 0%;
+    height: 3%;
+  }
+  #homeb {
+    width: 20px;
+    height: 20px;
+  }
+  }
