@@ -11,13 +11,20 @@
         }
         .cuadrado {
             width: 80px;
-            height: 40px;
-            background-color: black;
+            height: 80px;
             position: absolute;
             top:"0px";
             left:"0px";
         }
 
+        .basura {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            position: absolute;
+            top:"10px";
+            left:"10px";
+        }
 
         .cuadrado2 {
             width: 497px;
@@ -34,8 +41,9 @@
 
 </head>
 <body>
-    <div id="cuadrado2" class="cuadrado2"><img src="coche.png" title="Foto11" alt="Foto11" width="80" height="40"> </div>
-    <div id="cuadrado1" class="cuadrado"></div>
+        <div class="basura"></div>
+    <div id="cuadrado2" class="cuadrado2"></div>
+    <div id="cuadrado1" class="cuadrado"><img id="cuadrado1" class="cuadrado" src="11005_1.png" title="Foto11" alt="Foto11" width="80" height="80"> </div>
 
 
     <script>
@@ -51,7 +59,7 @@
                 console.log("left")
                 x = x + dx;
             }           
-            if (x<=499){(key.keyCode == 39)
+            if (x<=430){(key.keyCode == 39)
                 console.log("left")}
                 else if (key.keyCode == 39) {x = x - dx}  
 
@@ -64,7 +72,7 @@
                 console.log("down")
                 y = y + dy;
             }           
-            if (y<=499){(key.keyCode == 40)
+            if (y<=430){(key.keyCode == 40)
                 console.log("down")}
                 else if (key.keyCode == 40) {y = y - dy}  
    
