@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="Ejercico1.css">
+</head>
+<body>
+
+<div class="cuadrado" id="laukia01" ></div>
+
+
+</body>
+
+
+<script>
+function ocultar_o_visibilizar() {
+
+
+if (laukia01.style.backgroundColor == "white"){
+    laukia01.style.backgroundColor = "yellow"}
+else {
+    (laukia01.style.backgroundColor = "white")
+}
+}
+laukia01= document.getElementById ("laukia01");
+laukia01.addEventListener("click", ocultar_o_visibilizar);
+laukia01.style.backgroundColor = "yellow";
+   </script>
+
+</html>
