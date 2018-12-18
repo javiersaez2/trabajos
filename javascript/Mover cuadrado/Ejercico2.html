@@ -54,10 +54,10 @@
 
             if (x<=15){(key.keyCode == 37)
                 console.log("right")}
-                else if (key.keyCode == 37) {(x = x - dx)&&(document.getElementById("myImg").src = "coche.png")}  
+                else if (key.keyCode == 37) {(x = x - dx)&&(document.getElementById("myImg").src = "11005_2.png")}  
               if (key.keyCode == 39) {
-                console.log("left")
-                x = x + dx
+
+                ((x = x + dx)&&(document.getElementById("myImg").src = "11005_3.png"))
             }           
             if (x<=430){(key.keyCode == 39)
                 console.log("left")}
@@ -67,10 +67,10 @@
 
             if (y<=15){(key.keyCode == 38)
                 console.log("top")}
-                else if (key.keyCode == 38) {y = y - dy}  
+                else if (key.keyCode == 38) {(y = y - dy)&&(document.getElementById("myImg").src = "11005_1.png")}  
               if (key.keyCode == 40) {
-                console.log("down")
-                y = y + dy;
+
+                ((y = y + dy)&&(document.getElementById("myImg").src = "11005_4.png"))
             }           
             if (y<=430){(key.keyCode == 40)
                 console.log("down")}
