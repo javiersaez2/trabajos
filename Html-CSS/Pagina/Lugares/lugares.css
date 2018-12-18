@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'My Happy Ending';
+    font-style: normal;
+    font-weight: 400;
+    src: local('My Happy Ending'), local('My Happy Ending'), url("My Happy Ending.ttf") format('truetype');
+  }
+
+body {
+    background-image: url("fondo.jpg");
+  
+  }
+
+  
+
+#mySidenav a {
+  position: absolute;
+  left: -4.5%;
+  transition: 0.3s;
+  padding: 0.5%;
+  width: 6%;
+  text-decoration: none;
+  text-align: ;
+  font-family: 'My Happy Ending';
+  font-size: 200%;
+  color: black;
+  box-shadow: 5px 5px 5px rgb(95, 95, 95);
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  border-radius: 0  0;
+
+}
+
+#mySidenav a:hover {
+  left: -0.5%;
+}
+
+#Principal {
+  top: 390px;
+  background-color: ;
+}
+
+#Galeria {
+  top: 460px;
+  background-color: ;
+}
+
+#projects {
+  top: 530px;
+  background-color: ;
+}
+
+#contact {
+  top: 600px;
+  background-color: #ffffff00;
+}
+
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: -359.6px;
+  left: 0px;
+  width: 99%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+div.cabecera {
+    position: relative;
+    left: 0%;
+    width: 101.4%;
+    height: 358px;
+    background-color: white;
+    border: 0px solid #000000;
+  }
+
+
+
+  div.borde{   
+    position: relative;
+    left: 10.9%;
+    width: 89.5%;
+    height: auto;
+   border: 0px solid rgb(0, 0, 0);   
+  }
+
+
+  
+  div.gallery {
+    margin: 5px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: white;
+    float: left;
+    width: 18.5%;    
+}
+
+div.gallery:hover {
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: 280px;
+
+}
+
+div.desc {
+    background-color: white;
+    height: 120px;
+}
+
+#home {
+   
+    width: 20px;
+    height: 20px;
+    background: url(img_navsprites.gif) 0 0;
+}
+
+div.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 3%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#homeb {
+  width: 32px;
+  height: 32px;
+
+}
+
+@media screen and (max-width: 1366px) {
+  #mySidenav a  {
+    float: none;
+    width: 8%;
+    padding: 0.6%;
+    left: -6.5%;
+  }
+    div.gallery img{
+      float: none;
+      height: 180px;
+    }
+  }
+
+    @media screen and (max-width: 800px) {   
+    div.gallery {
+      width: 30.5%;    
+  }   
+  div.desc {
+    height: 140px;
+}
+    #mySidenav a  {
+      float: none;
+      width: 11%;
+      padding: 0.6%;
+      left: -10.5%;
+    } 
+    div.cabecera {
+      width: 100%;
+      height: 358px;
+
+    }
+    div.footer {
+      bottom: 0%;
+      height: 5%;
+  }
+  #homeb {
+      width: 20px;
+      height: 20px;
+  }
+  }
+
+  @media screen and (max-width: 1024px) {   
+    div.gallery {
+      width: 31.5%;    
+  }   
+  div.desc {
+    height: 140px;
+}
+  #mySidenav a  {
+    float: none;
+    width: 11%;
+    padding: 0.6%;
+    left: -10.5%;
+} 
+  div.cabecera {
+    width: 100%;
+    height: 358px;
+}
+div.borde{   
+  position: relative;
+  left: 13%;
+  width: 85.5%;
+  height: auto;
+ 
+}    
+div.footer {
+  bottom: 0%;
+  height: 3%;
+}
+#homeb {
+  width: 20px;
+  height: 20px;
+}
+}

@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'My Happy Ending';
+    font-style: normal;
+    font-weight: 400;
+    src: local('My Happy Ending'), local('My Happy Ending'), url("My Happy Ending.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'IndieFlower';
+    font-style: normal;
+    font-weight: 400;
+    src: local('IndieFlower'), local('IndieFlower'), url("IndieFlower.ttf") format('truetype');
+  }
+
+
+body {
+    background-image: url("fondo.jpg");
+  
+  }
+
+#mySidenav a {
+    position: absolute;
+    left: -4.5%;
+    transition: 0.3s;
+    padding: 0.5%;
+    width: 7%;
+    text-decoration: none;
+    text-align: ;
+    font-family: 'My Happy Ending';
+    font-size: 200%;
+    color: black;
+    box-shadow: 5px 5px 5px rgb(95, 95, 95);
+    border-style: solid;
+    border-color: rgb(236, 236, 236);
+    border-radius: 0  0;
+
+}
+
+#mySidenav a:hover {
+  left: -0.5%;
+}
+
+#Principal {
+  top: 390px;
+  background-color: ;
+}
+
+#Galeria {
+  top: 460px;
+  background-color: ;
+}
+
+#projects {
+  top: 530px;
+  background-color: ;
+}
+
+#contact {
+  top: 600px;
+  background-color: #ffffff00;
+}
+
+
+.content {
+    padding: 16px;
+  }
+  
+.sticky {
+    position: fixed;
+    top: -359.6px;
+    left: 0px;
+    width: 99%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+
+
+
+div.cabecera {
+    position: relative;
+    left: 0%;
+    width: 101.4%;
+    height: 358px;
+    background-color: white;
+    border: 0px solid #000000;
+}
+
+div.titulo {
+    font-family: "IndieFlower";
+    font-size:300%;    
+}
+  
+div.texto {
+    font-size:125%;    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    justify-content: right;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 0%;
+    padding: 1%;
+}
+
+/* Main column */
+.main {
+    flex: 60%;
+    padding: 1%; 
+    height: 1980px; 
+}
+.bordes {
+    flex: 1%;
+    padding: 1%;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: white;
+}
+
+
+div.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+ #homeb {
+    width: 32px;
+    height: 32px;
+
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 70%) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width: 1366px) {
+    #mySidenav a  {
+      float: none;
+      width: 9%;
+      padding: 0.6%;
+      left: -6.5%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {   
+    #mySidenav a  {
+      float: none;
+      width: 12%;
+      padding: 0.6%;
+      left: -10.5%;
+    } 
+
+    .fakeimg {
+        width:100% ;
+    }
+
+    .bordes {
+        flex: 0%;
+        padding: 2%;
+    }   
+
+    .side {
+        flex: 0%;
+        padding: 1%;
+    }
+    .main {
+        height: 2500px;
+        flex: 80%;
+        padding: 1%;  
+    }
+    div.cabecera {
+        width: 100%;
+        height: 358px;
+      }
+    div.texto {
+        font-size:100%;    
+    }
+    
+    div.footer {
+        bottom: 0%;
+        height: 10%;
+    }
+    #homeb {
+        width: 20px;
+        height: 20px;
+    }
+  
+}
+
+
+
+@media screen and (max-width: 1024px) {   
+    #mySidenav a  {
+      float: none;
+      width: 12%;
+      padding: 0.6%;
+      left: -10.5%;
+    } 
+
+    .fakeimg {
+        width:100% ;
+    }
+
+    .bordes {
+        flex: 0%;
+        padding: 2%;
+    }   
+
+    .side {
+        flex: 0%;
+        padding: 1%;
+    }
+    .main {
+        height: 1970px;
+        flex: 80%;
+        padding: 1%;  
+    }
+    div.cabecera {
+        width: 100%;
+        height: 358px;
+
+      }
+    div.texto {
+    font-size:100%;    
+    }
+    div.footer {
+        bottom: 0%;
+        height: 6%;
+    }
+    #homeb {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -9,7 +9,7 @@
         body {
             background-color: white;
         }
-        .cuadrado {
+        .cuadrado1 {
             width: 80px;
             height: 80px;
             position: absolute;
@@ -43,7 +43,7 @@
 <body>
         <div class="basura"></div>
     <div id="cuadrado2" class="cuadrado2"></div>
-    <div id="cuadrado1" class="cuadrado"><img id="cuadrado1" class="cuadrado" src="11005_1.png" title="Foto11" alt="Foto11" width="80" height="80"> </div>
+    <div id="cuadrado1" class="cuadrado1"><img id="myImg" class="cuadrado1" src="11005_1.png" title="Foto11" alt="Foto11" width="80" height="80"> </div>
 
 
     <script>
@@ -54,10 +54,10 @@
 
             if (x<=15){(key.keyCode == 37)
                 console.log("right")}
-                else if (key.keyCode == 37) {x = x - dx}  
+                else if (key.keyCode == 37) {(x = x - dx)&&(document.getElementById("myImg").src = "coche.png")}  
               if (key.keyCode == 39) {
                 console.log("left")
-                x = x + dx;
+                x = x + dx
             }           
             if (x<=430){(key.keyCode == 39)
                 console.log("left")}
