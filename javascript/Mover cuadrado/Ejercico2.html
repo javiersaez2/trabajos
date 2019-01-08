@@ -22,8 +22,8 @@
             height: 40px;
             background-color: red;
             position: absolute;
-            top:"10px";
-            left:"10px";
+            top:"0px";
+            left:"0px";
         }
 
         .cuadrado2 {
@@ -33,6 +33,7 @@
             border-style: solid;
             border-width: 5px;
             border-color: blue;
+            background-image: url("fondo.jpg");
             position: absolute;
             top:"0px";
             left:"0px";
@@ -41,9 +42,11 @@
 
 </head>
 <body>
-        <div class="basura"></div>
+    a
     <div id="cuadrado2" class="cuadrado2"></div>
+    <div id="basura" class="basura"></div>
     <div id="cuadrado1" class="cuadrado1"><img id="myImg" class="cuadrado1" src="11005_1.png" title="Foto11" alt="Foto11" width="80" height="80"> </div>
+    
 
 
     <script>
@@ -76,7 +79,7 @@
                 console.log("down")}
                 else if (key.keyCode == 40) {y = y - dy}  
    
-            
+            if (key.keyCode == 39 &&key.keyCode == 37) {document.getElementById("myImg").src = "11005_4.png"}
           
             c1.style.left = x + "px";
             c1.style.top = y + "px";
@@ -93,6 +96,7 @@
         c1.style.left = x + "px";
         c1.style.top = y + "px";
 
+        c2 = document.getElementById("basura");
 
 
     
