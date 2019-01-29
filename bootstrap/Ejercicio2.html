@@ -23,7 +23,9 @@
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(#F17153, #F58D63, #f1ab53);
     /* Standard syntax */
-  
+    min-width: 13%;
+    padding: 0px;
+    min-height: 100%;
     height: 100vh;
 }
 .logo {
@@ -38,13 +40,14 @@
 .list {
     color: #fff;
     list-style: none;
+    position: relative;
     padding-left: 0px;
 }
 .list::first-line {
     color: rgba(255, 255, 255, 0.5);
 }
 .list> li, h3 {
-    padding: 5px 0px 5px 40px;
+    padding: 5px 0px 5px 5px;
 }
 .list>li:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -56,8 +59,96 @@
 text-align:center;
 }
 
+.tab-content{
+position: relative;
+  left: 1%;
+  width: 83%;
+  border: 3px solid #73AD21;
+}
+
+
+.foto{
+position: relative;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px; 
+}
+
 
   body {background-color: rgb(0, 119, 255);}/*333*/
+
+
+
+
+  @media (max-width : 667px)  {
+.tab-content{
+position: relative;
+  left: 1%;
+  width: 80%;
+  border: 3px solid #73AD21;
+
+}
+}
+
+  @media (max-width : 640px)  {
+.tab-content{
+position: relative;
+  left: 1%;
+  width: 78%;
+  border: 3px solid #73AD21;
+
+}
+  }
+  @media (max-width : 568px)  {
+.tab-content{
+position: relative;
+  left: 1%;
+  width: 78%;
+  border: 3px solid #73AD21;
+}
+.sidebar1 {
+    min-height: 100%;
+    height: 190vh;   
+}
+}
+  @media (max-width : 414px)  {
+.tab-content{
+position: relative;
+  left: 1%;
+  width: 69%;
+  border: 3px solid #73AD21;
+
+}
+  }
+  @media (max-width : 375px)  {
+.tab-content{
+position: relative;
+  left: 1%;
+  width: 65%;
+  border: 3px solid #73AD21;
+
+}
+  }
+  @media (max-width : 360px)  {
+.tab-content{
+position: relative;
+  left: 1%;
+  width: 65%;
+  border: 3px solid #73AD21;
+
+}
+  }
+
+  @media (max-width : 320px)  {
+    .tab-content{
+position: relative;
+  left: 1%;
+  width: 60%;
+  border: 3px solid #73AD21;
+
+}
+  }
 
   </style>
   <body>
@@ -68,7 +159,7 @@ text-align:center;
 
           <div class="container-fluid">
               <div class="row">
-                  <div class="col-md-2 col-sm-4 sidebar1">
+                  <div class="sidebar1">
                       <div class="logo">
                           <img src="http://lorempixel.com/output/people-q-g-64-64-1.jpg" class="img-responsive center-block" alt="Logo">
                       </div>
@@ -119,22 +210,16 @@ text-align:center;
                             Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche.<br> 
                             Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla<br> 
                             yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-  
+                            <img src="descarga.jpg" class="img-responsive center-block" alt="Logo">
                         </div>
-
-
 
                         <div class="tab-pane" id="item3">
                             Its for item3
                         </div>
 
-
-
                         <div class="tab-pane" id="item4">
                             Its for item4
                         </div>
-
-
 
                         <div class="tab-pane" id="item5">
                             Its for item5
