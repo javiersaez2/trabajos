@@ -12,6 +12,16 @@
   </head>
   <style>
 
+@font-face {
+font-family: SweetCookie;
+src: url(SweetCookie.ttf);
+}
+
+.titulo{
+    font-family: "SweetCookie";
+    font-size: 300%;
+}
+
 .sidebar1 {
     background: #F17153;
     /* For browsers that do not support gradients */
@@ -24,7 +34,6 @@
     background: linear-gradient(#F17153, #F58D63, #f1ab53);
     /* Standard syntax */
     min-width: 13%;
-    padding: 0px;
     min-height: 100%;
     height: 100vh;
 }
@@ -58,15 +67,12 @@
 }.main-content{
 text-align:center;
 }
-
 .tab-content{
 position: relative;
   left: 1%;
   width: 83%;
   border: 3px solid #73AD21;
 }
-
-
 .foto{
 position: relative;
   right: 0px;
@@ -74,24 +80,19 @@ position: relative;
   border: 3px solid #73AD21;
   padding: 10px; 
 }
-
-
   body {background-color: rgb(0, 119, 255);}/*333*/
-
-
-
-
   @media (max-width : 667px)  {
 .tab-content{
   width: 80%;
-
+}
+.sidebar1 {
+    min-height: 100%;
+    height: 170vh;   
 }
 }
-
   @media (max-width : 640px)  {
 .tab-content{
   width: 78%;
-
 }
   }
   @media (max-width : 568px)  {
@@ -106,29 +107,23 @@ position: relative;
   @media (max-width : 414px)  {
 .tab-content{
   width: 69%;
-
 }
   }
   @media (max-width : 375px)  {
 .tab-content{
   width: 65%;
-
 }
   }
   @media (max-width : 360px)  {
 .tab-content{
   width: 65%;
-
 }
   }
-
   @media (max-width : 320px)  {
     .tab-content{
   width: 60%;
-
 }
   }
-
   </style>
   <body>
 
@@ -184,8 +179,8 @@ position: relative;
 
 
 
-                        <div class="tab-pane" id="item2">
-                            MUESLI CON YOGUR<p> 
+                        <div class="tab-pane" id="item2"><p>
+                            <div class="titulo" >Muesli con yogur</div><p><p> 
                             Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche.<br> 
                             Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla<br> 
                             yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
@@ -213,9 +208,7 @@ position: relative;
 
                 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
        
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
