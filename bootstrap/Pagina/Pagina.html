@@ -35,7 +35,6 @@ src: url(IndieFlower.ttf);
 .tab-content{
     background-color: rgb(68, 68, 68);
 }
-
 .sidebar1 {
     background: #F17153;
     /* For browsers that do not support gradients */
@@ -48,8 +47,8 @@ src: url(IndieFlower.ttf);
     background: linear-gradient(rgb(83, 120, 241), rgb(143, 99, 245), #cc53f1);
     /* Standard syntax */
     min-width: 13%;
-    min-height: 100%;
-    height: 100vh;
+ 
+
 }
 .logo {
     max-height: 130px;
@@ -111,17 +110,15 @@ margin: 5px;
   padding: 15px; 
 }
 
-
+.row{
+background-color: rgb(68, 68, 68);
+}
 
   @media (max-width : 667px)  {
 .tab-content{
   width: 80%;
 }
-.sidebar1 {
-    min-height: 100%;
-    height: 170vh;   
-}
-}
+  }
   @media (max-width : 640px)  {
 .tab-content{
   width: 78%;
@@ -131,10 +128,7 @@ margin: 5px;
 .tab-content{
   width: 78%;
 }
-.sidebar1 {
-    min-height: 100%;
-    height: 190vh;   
-}
+
 .columna{
 position: relative;
   width: 98%;
@@ -168,7 +162,7 @@ position: relative;
     font-size: 90%;
 }
   }
-  @media (max-width : 375px)  {
+  @media (max-width : 375px)  {    
 .tab-content{
   width: 65%;
 }
@@ -179,8 +173,8 @@ position: relative;
 .columna{
 position: relative;
   width: 98%;
-  padding: 5px; 
-  left: 3px;
+  padding: 10px; 
+  left: 7px;
 }
 .texto{
     font-family: "IndieFlower";
@@ -250,7 +244,7 @@ font-size: 155%;
 
                           <ul class="list">
                               <h3><strong>Tutoriales</strong></h3>
-                              <li>Desayunos</li>
+                              <li data-target="#item6" data-toggle="tab">Desayunos</li>
                               <li>Comidas</li>
                               <li>Cenas</li>
                               <li>Meriendas</li>
@@ -262,18 +256,18 @@ font-size: 155%;
                   </div>
 
                   <div class="tab-content clearfix">
-                      
-                        <div class="tab-pane" id="item1"><p>
+                     
+                         <div class="tab-pane" id="item1"><p>
                             
                                <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                                   <div class="titulo">Muesli con yogur2</div><p>
+                                   <div class="titulo">Muesli con yogur1111111</div><p>
                                     <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
                                 Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
                                 yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
                                 </div></div>
     
     
-                                <div class="columna"><div class="foto"><img src="tortitas.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                                <div class="columna"><div class="foto"><img src="tortitas2.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                                     <div class="titulo">Tortitas de té matcha</div><p>
                                     <div class="texto">Unas tortitas no tienen por qué ser poco saludables, y esta deliciosa receta lo demuestra. 
                                         Tritura 1 plátano, un huevo, una clara, 3 cucharadas de avena, dos cucharaditas de azúcar moreno y una 
@@ -282,15 +276,16 @@ font-size: 155%;
                                 </div></div>
     
     
-                                <div class="columna"><div class="foto"><img src="tortitas2.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                                <div class="columna"><div class="foto"><img src="yogur.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                                 <div class="titulo" >Avenacon yogur de soja, frambuesa y papaya</div><p>
-                                    <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                                Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                                yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                                    <div class="texto">Aquí tienes unos de los deliciosos desayunos con avena fáciles de preparar. 
+                                        En un tarro de cristal, pon una capa de copos de avena machacados con unas avellanas y unas pipas de girasol. 
+                                        Encima, añade una capa de frambuesas batidas con un poco de miel. Luego, una capa de yogur de soja 0%. 
+                                        Y finalmente, unas frambuesas enteras con taquitos de papaya. ¡Fàcil y saludable!
                                 </div></div>
     
-                                <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                                <div class="titulo" >Muesli con yogur2</div><p>
+                                <div class="columna"><div class="foto"><img src="batidoverde.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                                <div class="titulo" >Batido verde de acelga y lechuga con uva</div><p>
                                     <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
                                 Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
                                 yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
@@ -316,47 +311,54 @@ font-size: 155%;
 
 
                         <div class="tab-pane" id="item2"><p>
-                            <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                            Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                            Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                            yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                            <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
-
-
-                            <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                            Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                            sta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                            yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                            <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
-
-
-                            <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                            Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                            sta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                            yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                            <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
-
-                            <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                            Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                            Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                            yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                            <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
-        
-
-                            <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                            Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                            sta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                            yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                            <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
-        
-
-                            <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                            Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                            sta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                            yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                            <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>  
-
-                        </div>
+                                <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                                <div class="titulo">Muesli con yogur2</div><p>
+                                 <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
+                             Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
+                             yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                             </div></div>
+ 
+ 
+                             <div class="columna"><div class="foto"><img src="tortitas2.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                                 <div class="titulo">Tortitas de té matcha</div><p>
+                                 <div class="texto">Unas tortitas no tienen por qué ser poco saludables, y esta deliciosa receta lo demuestra. 
+                                     Tritura 1 plátano, un huevo, una clara, 3 cucharadas de avena, dos cucharaditas de azúcar moreno y una 
+                                     cucharada sopera de té matcha. Pon en una sartén un poco de aceite vegetal y ve cocinando las tortitas 
+                                     una a una (un cucharón de masa por tortita). Puedes acompañarlas con yogur y fruta troceada.
+                             </div></div>
+ 
+ 
+                             <div class="columna"><div class="foto"><img src="yogur.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                             <div class="titulo" >Avenacon yogur de soja, frambuesa y papaya</div><p>
+                                 <div class="texto">Aquí tienes unos de los deliciosos desayunos con avena fáciles de preparar. 
+                                     En un tarro de cristal, pon una capa de copos de avena machacados con unas avellanas y unas pipas de girasol. 
+                                     Encima, añade una capa de frambuesas batidas con un poco de miel. Luego, una capa de yogur de soja 0%. 
+                                     Y finalmente, unas frambuesas enteras con taquitos de papaya. ¡Fàcil y saludable!
+                             </div></div>
+ 
+                             <div class="columna"><div class="foto"><img src="batidoverde.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                             <div class="titulo" >Batido verde de acelga y lechuga con uva</div><p>
+                                 <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
+                             Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
+                             yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                             </div></div>
+         
+ 
+                             <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                             <div class="titulo" >Muesli con yogur2</div><p>
+                                 <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
+                             Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
+                             yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                             </div></div>
+         
+ 
+                             <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                             <div class="titulo" >Muesli con yogur2</div><p>
+                                 <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
+                             Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
+                             yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                             </div></div>
+                     </div>
 
                         <div class="tab-pane" id="item3"><p>
 
@@ -367,7 +369,7 @@ font-size: 155%;
                                 <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
     
     
-                                <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
+                                <div class="columna"><div class="titulo" >Muesli con yogur3</div><p><p> 
                                 Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
                                 sta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
                                 yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
@@ -413,7 +415,7 @@ font-size: 155%;
 </div>
 </div>
 </div>
-
+</div>
 
 
                 <!-- Optional JavaScript -->
