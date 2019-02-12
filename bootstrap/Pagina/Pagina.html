@@ -47,8 +47,8 @@ src: url(IndieFlower.ttf);
     background: linear-gradient(rgb(83, 120, 241), rgb(143, 99, 245), #cc53f1);
     /* Standard syntax */
     min-width: 13%;
-    min-height: 100%;
-    height: 250vh;
+ 
+
 }
 .logo {
     max-height: 130px;
@@ -118,11 +118,7 @@ background-color: rgb(68, 68, 68);
 .tab-content{
   width: 80%;
 }
-.sidebar1 {
-    min-height: 100%;
-    height: 170vh;   
-}
-}
+  }
   @media (max-width : 640px)  {
 .tab-content{
   width: 78%;
@@ -132,10 +128,7 @@ background-color: rgb(68, 68, 68);
 .tab-content{
   width: 78%;
 }
-.sidebar1 {
-    min-height: 100%;
-    height: 190vh;   
-}
+
 .columna{
 position: relative;
   width: 98%;
@@ -169,10 +162,7 @@ position: relative;
     font-size: 90%;
 }
   }
-  @media (max-width : 375px)  {
-.sidebar1 {
-height: 1091vh;
-}      
+  @media (max-width : 375px)  {    
 .tab-content{
   width: 65%;
 }
@@ -254,7 +244,7 @@ font-size: 155%;
 
                           <ul class="list">
                               <h3><strong>Tutoriales</strong></h3>
-                              <li>Desayunos</li>
+                              <li data-target="#item6" data-toggle="tab">Desayunos</li>
                               <li>Comidas</li>
                               <li>Cenas</li>
                               <li>Meriendas</li>
@@ -265,9 +255,9 @@ font-size: 155%;
                   </div>
                   </div>
 
-                  <div class="tab-content clearfix">
-                      
-                        <div class="tab-pane" id="item1"><p>
+                  <div class="tab-content clearfix"
+                     
+                         class="tab-pane" id="item1"><p>
                             
                                <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                                    <div class="titulo">Muesli con yogur</div><p>
