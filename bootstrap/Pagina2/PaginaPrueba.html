@@ -49,9 +49,7 @@ src: url(IndieFlower.ttf);
     min-width: 13%;
   }
 
-  .content {
 
-}
 
 .sticky {
   position: fixed;
@@ -95,7 +93,16 @@ font-size: 155%;
     color: white;
     font-weight: bolder;
     padding-left: 35px;
-}.main-content{
+}
+
+.list>a{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid white;
+    color: white;
+    font-weight: bolder;
+    padding-left: 35px;
+}
+.main-content{
 text-align:center;
 }
 .tab-content{
@@ -126,7 +133,7 @@ margin: 5px;
 }
 
 .row{
-background-color: rgb(68, 68, 68);
+    background-color: rgb(68, 68, 68);
 }
 
   @media (max-width : 667px)  {
@@ -228,13 +235,9 @@ font-size: 155%;
   }
   </style>
 
-<link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="js/bootstrap.min.js"></script>
-<script src="jquery-1.11.1.min.js"></script>
-
   <body>
       
-
+        
           <div class="container-fluid">
               <div class="row">
                   <div class="sidebar1">
@@ -243,23 +246,23 @@ font-size: 155%;
                           <img src="logo.png" class="img-responsive center-block" alt="Logo">
                       </div>
                       <br>
-                      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" >
+                      <div  role="tablist" >
                           <ul class="list">
-                                <div class="nav flex-column ">
+                               
                               <li>
                                   Principal
                                   </li>
                               <strong>Recetas</strong>
                              
-                                  <li  class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                  <li><a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                       Desayunos
-                                  </li>
-                                  <li> <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"> </a>
+                                  </li></a>
+                                  <li> <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                                       Comidas
-                                  </li>
-                                  <li> <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"></a>
+                                  </li></a>
+                                  <li> <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                                       Cenas
-                                  </li>
+                                  </li></a>
                                   <li >
                                       Meriendas
                                   </li>
@@ -281,12 +284,16 @@ font-size: 155%;
                         </div>
                   </div>
                   </div>
-               
-                  <div class="tab-content clearfix">
-                        <div class="tab-content" id="v-pills-tabContent">
+        
 
 
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                       <div class="tab-content" id="v-pills-tabContent">
+                           
+                            <div class="tab-pane" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <img src="logo2.png"></div>
+                           
+
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
                                <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                                    <div class="titulo">Muesli con yogur</div><p>
@@ -443,8 +450,6 @@ font-size: 155%;
 </div>
 </div>
 </div>
-</div>
-</div>
 
 
 
@@ -463,6 +468,11 @@ font-size: 155%;
     }
     </script>
 
+
+
+
+
+
                 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -470,9 +480,6 @@ font-size: 155%;
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
        
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
