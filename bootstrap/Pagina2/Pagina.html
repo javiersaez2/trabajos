@@ -49,7 +49,9 @@ src: url(IndieFlower.ttf);
     min-width: 13%;
   }
 
-
+  .content {
+  padding: 16px;
+}
 
 .sticky {
   position: fixed;
@@ -93,16 +95,7 @@ font-size: 155%;
     color: white;
     font-weight: bolder;
     padding-left: 35px;
-}
-
-.list>a{
-    background-color: rgba(255, 255, 255, 0.2);
-    border-left: 5px solid white;
-    color: white;
-    font-weight: bolder;
-    padding-left: 35px;
-}
-.main-content{
+}.main-content{
 text-align:center;
 }
 .tab-content{
@@ -112,6 +105,7 @@ position: relative;
 }
 .foto{
 position: relative;
+
   width: 100%;
   border: 0px solid black;
 }
@@ -129,7 +123,7 @@ margin: 5px;
 }
 
 .row{
-    background-color: rgb(68, 68, 68);
+background-color: rgb(68, 68, 68);
 }
 
   @media (max-width : 667px)  {
@@ -179,19 +173,11 @@ position: relative;
 .list> li, h3 {
     font-size: 90%;
 }
-.foto2{
-  position: relative;
-  width: 125%;
-  height: 35%;
-}   
   }
   @media (max-width : 375px)  {    
 
 .sidebar1 {
 width: 30%;
-}
-.sticky {
-  width: 30%;
 }   
 .tab-content{
   width: 65%;
@@ -202,8 +188,7 @@ position: relative;
 }
 .columna{
 position: relative;
-
-  width: 150%;
+  width: 98%;
   padding: 10px; 
   left: 7px;
 }
@@ -223,13 +208,6 @@ font-size: 80%;
 padding: 5px 0px 5px 5px;
 font-size: 155%;
 }
-.logo2{
-position: relative;
-  width: 150%;
-  height: 300%;
-}
-
-
 }
   @media (max-width : 360px)  {
 .tab-content{
@@ -243,13 +221,13 @@ position: relative;
   }
   </style>
 
-
 <link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="js/bootstrap.min.js"></script>
 <script src="jquery-1.11.1.min.js"></script>
 
   <body>
       
+      <body>
 
           <div class="container-fluid">
               <div class="row">
@@ -261,14 +239,9 @@ position: relative;
                       <br>
                       <div class="left-navigation">
                           <ul class="list">
-
-                              <li data-target="#item0" data-toggle="tab">
-                                  Principal
-                                  </li>
                               <strong>Recetas</strong>
                              
-                              <!-- Eliminar Logo -->
-                                  <li onclick="document.getElementById('mi_imagen').src = 'quitarlogo.png'" data-target="#item1" data-toggle="tab">
+                                  <li data-target="#item1" data-toggle="tab">
                                       Desayunos
                                   </li>
                                   <li data-target="#item2" data-toggle="tab">
@@ -296,19 +269,13 @@ position: relative;
                           </ul>
                         
                         </div>
-                        
                   </div>
-                  
                   </div>
-                  <div class="tab-content" id="v-pills-tabContent">
-        
-    
-                    <div class="logo2">
-                      <img class=foto2 id="mi_imagen"img src="logo2.png">a</div>
 
-
-                      <div class="tab-pane" id="item1"><p> 
-
+                  <div class="tab-content clearfix">
+                     
+                         <div class="tab-pane" id="item1"><p>
+                            
                                <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                                    <div class="titulo">Muesli con yogur</div><p>
                                     <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
@@ -465,7 +432,7 @@ position: relative;
 </div>
 </div>
 </div>
-</div>
+
 
 
 
@@ -484,7 +451,6 @@ position: relative;
     }
     </script>
 
-
                 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -492,6 +458,9 @@ position: relative;
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
        
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -504,4 +473,3 @@ position: relative;
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
-
