@@ -105,9 +105,13 @@ position: relative;
 }
 .foto{
 position: relative;
-
   width: 100%;
   border: 0px solid black;
+}
+.logo2{
+  position: relative;
+  width: 75%;
+  border: 1px solid black;
 }
 
 .columna{
@@ -241,7 +245,7 @@ font-size: 155%;
                           <ul class="list">
                               <strong>Recetas</strong>
                              
-                                  <li data-target="#item1" data-toggle="tab">
+                                  <li onclick="document.getElementById('mi_imagen').src = 'quitarlogo.png'" data-target="#item1" data-toggle="tab">
                                       Desayunos
                                   </li>
                                   <li data-target="#item2" data-toggle="tab">
@@ -273,7 +277,10 @@ font-size: 155%;
                   </div>
 
                   <div class="tab-content clearfix">
-                     
+
+                      <img id="mi_imagen"img src="logo2.png">
+
+
                          <div class="tab-pane" id="item1"><p>
                             
                                <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
