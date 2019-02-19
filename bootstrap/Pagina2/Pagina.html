@@ -49,7 +49,7 @@ body{
     background: linear-gradient(rgb(83, 120, 241), rgb(143, 99, 245), #cc53f1);
     /* Standard syntax */
     min-width: 13%;
-
+    
   }
 
   .content {
@@ -135,7 +135,11 @@ margin: 5px;
 
 .row{
 background-color: rgb(68, 68, 68);
-height: 100%;
+}
+
+.altura{
+ position: relative;
+ height: 700px; 
 }
 
 
@@ -169,8 +173,15 @@ position: relative;
 }
 }
   @media (max-width : 414px)  {
+    .sidebar1 {
+width: 30%;
+}  
+.sticky {
+  position: fixed;
+  width: 30%;
+} 
 .tab-content{
-  width: 69%;
+  width: 65%;
 }
 .foto{
 position: relative;
@@ -179,26 +190,37 @@ position: relative;
 .columna{
 position: relative;
   width: 98%;
-  padding: 5px; 
-  left: 3px;
+  padding: 10px; 
+  left: 7px;
 }
 .texto{
-    font-family: "IndieFlower";
     font-size: 125%;
 }
 .titulo{
-    font-family: "SweetCookie";
     font-size: 225%;
 }
-.list> li, h3 {
-    font-size: 90%;
+
+.logo2{
+  position: relative;
+  top: 30%;
+
+  width: 105%;
+  border: 1px solid black;
 }
-  }
+.altura{
+ position: relative;
+ height: 667px; 
+}
+}
   @media (max-width : 375px)  {    
 
 .sidebar1 {
 width: 30%;
-}   
+}  
+.sticky {
+  position: fixed;
+  width: 30%;
+} 
 .tab-content{
   width: 65%;
 }
@@ -230,10 +252,17 @@ font-size: 155%;
 }
 .logo2{
   position: relative;
+  top: 30%;
 
+  width: 105%;
   border: 1px solid black;
 }
+.altura{
+ position: relative;
+ height: 667px; 
 }
+}
+
   @media (max-width : 360px)  {
 .tab-content{
   width: 65%;
@@ -294,10 +323,12 @@ font-size: 155%;
             </div>
 
             <div class="tab-content clearfix">
-                       
-                <img class="logo2" id="fotologo2" src='Logogrande.png'>
-                
 
+                       <div class="altura" id="fotologo2">
+
+                <img class="logo2" src='Logogrande.png'>
+                
+              </div>
                    <div class="tab-pane" id="item1"><p>
                       
                          <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
