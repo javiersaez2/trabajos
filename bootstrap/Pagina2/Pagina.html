@@ -38,15 +38,16 @@ body{
 
 
 .sidebar1 {
-    background: #F17153;
+    background:rgb(0, 132, 255);
+
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgb(83, 120, 241), rgb(143, 99, 245), #cc53f1);
+    background: -webkit-linear-gradient(rgb(0, 132, 255), rgb(65, 43, 255), rgb(85, 46, 255));
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(83, 120, 241), rgb(143, 99, 245), #cc53f1);
+    background: -o-linear-gradient(rgb(0, 132, 255), rgb(65, 43, 255), rgb(85, 46, 255));
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb( 83, 120, 241), rgb(143, 99, 245), #cc53f1);
+    background: -moz-linear-gradient(rgb(0, 132, 255), rgb(65, 43, 255), rgb(143, 99, 245));
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(83, 120, 241), rgb(143, 99, 245), #cc53f1);
+    background: linear-gradient(rgb(0, 132, 255), rgb(65, 43, 255), rgb(85, 46, 255));
     /* Standard syntax */
     min-width: 13%;
     
@@ -117,8 +118,8 @@ position: relative;
 .logo2{
   position: relative;
   width: 84%;
-  left: 5%;
-  border: 1px solid black;
+  left: 2%;
+  border: 0px solid black;
 }
 
 .columna{
@@ -126,7 +127,7 @@ position: relative;
 float: left;
 margin: 5px;
   left: 5px;
-  height: 1200px;
+
   width: 24%;
   border: 0px solid  black;
   background-color: rgb(52, 52, 52);
@@ -139,7 +140,7 @@ background-color: rgb(68, 68, 68);
 
 .altura{
  position: relative;
- height: 969px; 
+ height: 700px; 
 }
 
 
@@ -173,8 +174,15 @@ position: relative;
 }
 }
   @media (max-width : 414px)  {
+    .sidebar1 {
+width: 30%;
+}  
+.sticky {
+  position: fixed;
+  width: 30%;
+} 
 .tab-content{
-  width: 69%;
+  width: 65%;
 }
 .foto{
 position: relative;
@@ -183,26 +191,38 @@ position: relative;
 .columna{
 position: relative;
   width: 98%;
-  padding: 5px; 
-  left: 3px;
+  margin-top: 10px;
+  padding: 10px; 
+  left: 7px;
 }
 .texto{
-    font-family: "IndieFlower";
     font-size: 125%;
 }
 .titulo{
-    font-family: "SweetCookie";
     font-size: 225%;
 }
-.list> li, h3 {
-    font-size: 90%;
+
+.logo2{
+  position: relative;
+  top: 30%;
+
+  width: 105%;
+  border: 0px solid black;
 }
-  }
+.altura{
+ position: relative;
+ height: 736px; 
+}
+}
   @media (max-width : 375px)  {    
 
 .sidebar1 {
 width: 30%;
-}   
+}  
+.sticky {
+  position: fixed;
+  width: 30%;
+} 
 .tab-content{
   width: 65%;
 }
@@ -234,10 +254,17 @@ font-size: 155%;
 }
 .logo2{
   position: relative;
+  top: 30%;
 
-  border: 1px solid black;
+  width: 105%;
+  border: 0px solid black;
+}
+.altura{
+ position: relative;
+ height: 667px; 
 }
 }
+
   @media (max-width : 360px)  {
 .tab-content{
   width: 65%;
@@ -258,9 +285,12 @@ font-size: 155%;
       
 
           <div class="container-fluid">
+            
               <div class="row">
+
                   <div class="sidebar1">
                       <div id="myHeader">
+                        
                       <div class="logo">
                           <img src="logo.png" class="img-responsive center-block" alt="Logo">
                       </div>
@@ -268,18 +298,17 @@ font-size: 155%;
                       <div class="left-navigation">
                           
                           <ul class="list" onclick="eliminar_elemento(this);">
-                              <strong>Recetas</strong>
+                              <strong data-target="#item1" data-toggle="tab">Recetas</strong>
                              
-                              <li data-target="#item1" data-toggle="tab">Desayunos</li>
+                              <li data-target="#item2" data-toggle="tab">Desayuno</li>
                                 
                             
-                            <li data-target="#item2" data-toggle="tab">Comidas</li>
+                            <li data-target="#item3" data-toggle="tab">Comida</li>
                             
-                            <li data-target="#item3" data-toggle="tab">Cenas</li>
+                            <li data-target="#item4" data-toggle="tab">Postre</li>
                                 
-                            <li data-target="#item4" data-toggle="tab">Meriendas</li>
+                            <li data-target="#item5" data-toggle="tab">Picoteo</li>
 
-                             <li data-target="#item5" data-toggle="tab">Picoteo</li>
 
                             </ul>
                     <br>
@@ -292,10 +321,12 @@ font-size: 155%;
                         <li>Meriendas</li>
                         <li>Picoteo</li>
                     </ul>
+                  </div>
                   
                   </div>
+                  
             </div>
-            </div>
+
 
             <div class="tab-content clearfix">
 
@@ -304,9 +335,12 @@ font-size: 155%;
                 <img class="logo2" src='Logogrande.png'>
                 
               </div>
-                   <div class="tab-pane" id="item1"><p>
+
+              <div class="tab-pane" id="item1"><p><div class="altura"></div> </div><p>
+
+                   <div class="tab-pane" id="item2"><p>
                       
-                         <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                         <div class="columna"><div class="foto"><img src="imagenes/descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                              <div class="titulo">Muesli con yogur</div><p>
                               <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
                           Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
@@ -314,7 +348,7 @@ font-size: 155%;
                           </div></div>
 
 
-                          <div class="columna"><div class="foto"><img src="tortitas2.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                          <div class="columna"><div class="foto"><img src="imagenes/tortitas2.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                               <div class="titulo">Tortitas de té matcha</div><p>
                               <div class="texto">Unas tortitas no tienen por qué ser poco saludables, y esta deliciosa receta lo demuestra. 
                                   Tritura 1 plátano, un huevo, una clara, 3 cucharadas de avena, dos cucharaditas de azúcar moreno y una 
@@ -323,7 +357,7 @@ font-size: 155%;
                           </div></div>
 
 
-                          <div class="columna"><div class="foto"><img src="yogur.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                          <div class="columna"><div class="foto"><img src="imagenes/yogur.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                           <div class="titulo" >Avenacon yogur de soja, frambuesa y papaya</div><p>
                               <div class="texto">Aquí tienes unos de los deliciosos desayunos con avena fáciles de preparar. 
                                   En un tarro de cristal, pon una capa de copos de avena machacados con unas avellanas y unas pipas de girasol. 
@@ -331,7 +365,7 @@ font-size: 155%;
                                   Y finalmente, unas frambuesas enteras con taquitos de papaya. ¡Fàcil y saludable!
                           </div></div>
 
-                          <div class="columna"><div class="foto"><img src="batidoverde.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                          <div class="columna"><div class="foto"><img src="imagenes/batidoverde.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                           <div class="titulo" >Batido verde de acelga y lechuga con uva</div><p>
                               <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
                           Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
@@ -339,118 +373,204 @@ font-size: 155%;
                           </div></div>
       
 
-                          <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                          <div class="titulo" >Muesli con yogur2</div><p>
-                              <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                          Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                          yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                          <div class="columna"><div class="foto"><img src="imagenes/tostadas.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                          <div class="titulo" >Tostadas de boniato</div><p>
+                              <div class="texto">Si quieres probar combinaciones de sabores nuevos, seguro que te gustan estas tostadas de boniato. 
+                                Corta el boniato en rodajas y pásalas por la tostadora un par de veces, hasta que veas que está hecho por dentro. 
+                                Compleméntalo con mantequilla de cacahuete y plátano, crema de chocolate con arándanos o queso crema con mermelada de frambuesas.
                           </div></div>
       
 
-                          <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                          <div class="titulo" >Muesli con yogur2</div><p>
-                              <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                          Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                          yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                          <div class="columna"><div class="foto"><img src="imagenes/pudding.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                          <div class="titulo" >Pudding de chía con frutas</div><p>
+                              <div class="texto">Este es un desayuno saludable ideal si te gusta lo dulce y buscar un plus de fibra. 
+                                En un bol o tarrito mezcla dos cucharadas de semillas de chía con 250 ml de la leche que prefieras. 
+                                Puedes endulzar la leche con miel. Deja reposar una hora (o toda la noche si lo preparas el día anterior). 
+                                Antes de comer, añade pipas de calabaza y frutos rojos.
+                          </div></div>
+
+
+                          <div class="columna"><div class="foto"><img src="imagenes/creps.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                          <div class="titulo" >Creps ligeros</div><p>
+                              <div class="texto">Utiliza esta receta de creps 100% libres de culpa y rellénalos con requesón, nueces y miel. 
+                                Un desayunazo saludable de fin de semana.
                           </div></div>
                   </div>
 
 
 
-                  <div class="tab-pane" id="item2"><p> 
-                       <div class="columna"><div class="foto"><img src="tortitas2.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                           <div class="titulo">Tortitas de té matcha</div><p>
-                           <div class="texto">Unas tortitas no tienen por qué ser poco saludables, y esta deliciosa receta lo demuestra. 
-                               Tritura 1 plátano, un huevo, una clara, 3 cucharadas de avena, dos cucharaditas de azúcar moreno y una 
-                               cucharada sopera de té matcha. Pon en una sartén un poco de aceite vegetal y ve cocinando las tortitas 
-                               una a una (un cucharón de masa por tortita). Puedes acompañarlas con yogur y fruta troceada.
+
+
+                  <div class="tab-pane" id="item3"><p>
+                    
+                    
+                       <div class="columna"><div class="foto"><img src="imagenes/avena.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                           <div class="titulo">Avena nutritiva</div><p>
+                           <div class="texto">La avena caliente en una mañana fría es una necesidad de supervivencia invernal. 
+                             También es una buena forma de permanecer satisfecho hasta el almuerzo y una excelente fuente de fibra soluble, 
+                             del tipo que ayuda a mantener bajos tus niveles de colesterol. Puedes hacerla en la estufa, en el microondas o en una olla de cocción lenta. 
+                             En un clima cálido, puedes hacer avena en la nevera de un día para otro sin mover un dedo.
                        </div></div>
 
-                       <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                       <div class="titulo">Muesli con yogur2</div><p>
-                        <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                    Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                    yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                       <div class="columna"><div class="foto"><img src="imagenes/ensalada.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                       <div class="titulo">Una ensalada verde que te dejará satisfecho</div><p>
+                        <div class="texto"> Si piensas que las ensaladas son para los conejos, aún no has encontrado la correcta. 
+                          Unos pocos consejos: usa vegetales frescos y considera que cualquier cosa enlatada debería ser un complemento y 
+                          no el ingrediente principal para que no termines con una ensalada marchita y triste. Si quieres que sea una comida 
+                          completa, añade un poco de proteína como carne, huevos, frijoles y nueces. Asegúrate de hacer una buena mezcla de 
+                          ingredientes crujientes tales como repollo crudo, pepino o nueces, y algunos suaves como tomates, verduras cocidas o frijoles.
+                          <br></br>
+                            El paso más importante es hacer tu propio y delicioso aderezo casero (y más saludable). Una sencilla vinagreta de 
+                            mostaza Dijon siempre funciona, pero también siéntete libre de probar algo más arriesgado. Si estás buscando una 
+                            receta completa que te inspire, prueba con esta ensalada de col rizada y coles de Bruselas o con esta ensalada 
+                            asiática de pollo.
                     </div></div>
 
 
-                       <div class="columna"><div class="foto"><img src="yogur.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                       <div class="titulo" >Avenacon yogur de soja, frambuesa y papaya</div><p>
-                           <div class="texto">Aquí tienes unos de los deliciosos desayunos con avena fáciles de preparar. 
-                               En un tarro de cristal, pon una capa de copos de avena machacados con unas avellanas y unas pipas de girasol. 
-                               Encima, añade una capa de frambuesas batidas con un poco de miel. Luego, una capa de yogur de soja 0%. 
-                               Y finalmente, unas frambuesas enteras con taquitos de papaya. ¡Fàcil y saludable!
+                       <div class="columna"><div class="foto"><img src="imagenes/avenacomida.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                       <div class="titulo" >Humus suave</div><p>
+                           <div class="texto">El hummus (puré de garbanzos) es básicamente la comida perfecta pues está lleno de proteínas y fibra. 
+                             Puedes untar zanahorias o apio con él cuando estés buscando un aperitivo saludable, o untarlo sobre un sándwich en lugar 
+                             de usar mayonesa. También puedes untarlo en tu dedo y comerlo solo.
+                            <br></br>
+                              Para hacerlo tú mismo, solo coloca unos pocos ingredientes básicos (garbanzos, pasta hecha con semillas de sésamo, ajo, jugo 
+                              de limón y sal) en la licuadora y procésalos.
                        </div></div>
 
-                       <div class="columna"><div class="foto"><img src="batidoverde.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                       <div class="titulo" >Batido verde de acelga y lechuga con uva</div><p>
-                           <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                       Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                       yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                       </div></div>
-   
-
-                       <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                       <div class="titulo" >Muesli con yogur2</div><p>
-                           <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                       Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                       yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                       <div class="columna"><div class="foto"><img src="imagenes/chili.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                       <div class="titulo" >Chili picante con frijoles</div><p>
+                           <div class="texto">El chili estándar requiere de carne de res molida, pero la verdad es que tú no la necesitas. 
+                             Los frijoles harán bien el trabajo de la proteína sin aportar nada de grasa saturada a la fiesta. 
+                             Si quieres agregar carne, prueba una receta que utilice pollo o pavo. Y definitivamente prepara una cantidad 
+                             suficiente pues el chili se congela muy bien
                        </div></div>
    
 
-                       <div class="columna"><div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div><br>
-                       <div class="titulo" >Muesli con yogur2</div><p>
-                           <div class="texto">Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                       Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                       yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
+                       <div class="columna"><div class="foto"><img src="imagenes/quinoa.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                       <div class="titulo" >quinoa basica</div><p>
+                           <div class="texto">
+                           No necesitas ser un fanático de la salud para amar la quinoa. Esta pequeña semilla tiene muchísimas proteínas y el sabor es 
+                           lo suficientemente sutil como para acompañar prácticamente cualquier plato. Asegúrate de enjuagar la quinoa antes de cocinarla 
+                           para quitarle el sabor amargo. Luego de eso, colócala en una cacerola, añade dos veces la cantidad de agua o caldo que tengas 
+                           de quinoa, y lleva a ebullición con fuego medio alto. Baja la temperatura hasta fuego medio-bajo, tápala, déjala que se cocine 
+                           durante 15 ó 20 minutos, o hasta que se haya consumido el agua. Saca la cacerola del fuego y déjala reposar durante 5 minutos 
+                           con la tapadera puesta, antes de quitarla y moverla suavemente. Durará alrededor de una semana en el refrigerador y básicamente 
+                           puedes añadirla a cualquier plato.
+
+                       </div></div>
+   
+
+                       <div class="columna"><div class="foto"><img src="imagenes/pasta.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                       <div class="titulo" >Pasta</div><p>
+                           <div class="texto">No le creas a nadie que te diga que la pasta no puede ser saludable. 
+                             Claro que puede serlo. Y aquellos que se niegan a sí mismos el placer de comer pasta, 
+                             no viven su vida al máximo. Primero, usa pasta integral porque al igual que el arroz integral, 
+                             tiene más nutrientes y fibra. Segundo, agrega MUCHOS vegetales y algo de proteína saludable. 
+                             Tercero, limita tus fuentes de grasas saturadas como crema, mantequilla, queso y carne con contenido graso.
+                            <br></br>
+                              
+                            Prueba este rigatoni integral con verduras asadas y piñones, o este linguini con camarones, aceitunas y tomates deshidratados. 
+                            También puedes modificar tus recetas favoritas para hacerlas más saludables. Intenta preparar este fusilli con brócoli 
+                            asado y la coliflor con fideos integrales con la mitad de pasta y queso y el doble de vegetales.
                        </div></div>
                </div>
 
-                  <div class="tab-pane" id="item3"><p>
-
-                          <div class="columna"><div class="titulo" >Muesli con yogur3</div><p><p> 
-                          Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                          Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                          yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                          <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
 
 
-                          <div class="columna"><div class="titulo" >Muesli con yogur3</div><p><p> 
-                          Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                          sta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                          yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                          <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
 
 
-                          <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                          Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                          sta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                          yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                          <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
 
-                          <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                          Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                          Esta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                          yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                          <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
-      
+                  <div class="tab-pane" id="item4"><p>
 
-                          <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                          Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                          sta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                          yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                          <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>
-      
+                      <div class="columna"><div class="foto"><img src="imagenes/galletasoreo.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Galletas Oreo caseras</div><p>
+                          <div class="texto">¿Me van a decir que hacer galletas oreo en casa no es una idea alucinante? 
+                              ¡Y de paso son saludables! Es mas, esta receta la amamos tanto que también 
+                              está como favorita en nuestra página general de postres donde también están los “no saludables”.
+                      </div></div>
 
-                          <div class="columna"><div class="titulo" >Muesli con yogur</div><p><p> 
-                          Es muy recomendable desayunar saludablemente para romper con el ayuno de toda la noche. 
-                          sta preparación es súper fácil, tendrás el desayuno listo en 3 minutos. En un bol, mezcla
-                          yogur con tu muesli sin azúcares añadidos favorito, la fruta que prefieras y un chorrito de miel
-                          <div class="foto"><img src="descarga.jpg" class="img-responsive center-block" alt="Logo"></div></div>  
-                  </div>
+                      
+                      <div class="columna"><div class="foto"><img src="imagenes/moussechocolate.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Mousse de Chocolate</div><p>
+                          <div class="texto">Esta receta de mousse de chocolate tiene la genialidad de que tiene aguacate 
+                              entre sus ingredientes (!) y se endulza con dátiles (!!!).
+                      </div></div>
+
+
+                      <div class="columna"><div class="foto"><img src="imagenes/lechemerengada.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Leche merengada</div><p>
+                          <div class="texto">La leche merengada no nos exige invertir apenas tiempo ni 
+                            esfuerzo para tener un postre casero, rico y saludable siempre disponible en nuestra nevera. 
+                            Otra de sus ventajas es que también se puede tomar a la hora de la merienda. Su tiempo de 
+                            preparación es relativamente poco, unos 20 minutos, aunque necesita unas cinco horas de enfriado/congelado
+                      </div></div>
+
+                      
+                      <div class="columna"><div class="foto"><img src="imagenes/pudin.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Pudín de chocolate bajo en azucar</div><p>
+                          <div class="texto">El chocolate... es... asombroso. No te prives, solo aprende a disfrutarlo de maneras 
+                            más saludables que con una barra de chocolate "Snickers". El pudín de chocolate es la solución perfecta 
+                            porque hay muchas maneras para que lo hagas (en secreto) y que sea bueno para ti. Prueba hacer este pudín 
+                            de chocolate y aguacate cuando no dispongas de mucho tiempo, éstas tasas de chocolate espumoso si deseas 
+                            engañar a alguien (o a ti mismo) para que coma tofu o bien un pudín de chocolate con semilla de chia y 
+                            dátiles si estás buscando algo un poco a la moda.
+                      </div></div>
+
+                      
+                      <div class="columna"><div class="foto"><img src="imagenes/smoothie.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Smoothie de plátano</div><p>
+                          <div class="texto">Preparar un batido de plátano para nuestros hijos es una idea estupenda tanto para los 
+                            postres como para las meriendas. Éste que os traemos es en realidad más un smoothie. La diferencia entre 
+                            batido y smoothie básicamente es que el smoothie incorpora lácteos y, a veces, hielo o helados, lo que hace 
+                            que tenga una textura más suave que el batido, de ahí su nombre.<br></br>
+
+                            El smoothie de plátano gusta a los niños especialmente porque, además de estar delicioso, es muy dulce. 
+                            Además, es una receta muy sencilla y rápida de realizar.
+                          </div></div>
+                      
+                      <div class="columna"><div class="foto"><img src="imagenes/sorbete.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Refrescante sorbete de fruta</div><p>
+                          <div class="texto">Cuando afuera hay calor, el postre debería ser frío, pero nadie dijo que tenía que ser un helado cremoso. 
+                            Hacer sorbetes es una manera perfecta de usar fruta fresca que se pasó de tiempo (o lo que sea que tengas en el congelador).
+                      </div></div>
+                      
+                    </div>
 
                   <div class="tab-pane" id="item4">
-                      Its for item4
+                    
+                    
+                      <div class="columna"><div class="foto"><img src="imagenes/canapes.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" > Canapes</div><p>
+                          <div class="texto">aperitivo saludable que es conveniente elaborarlos con pan integral tostado o de molde.
+                             A continuación, tienes varias opciones para hacer canapés ricos y nutritivos.
+                      </div></div>
+                      
+                      <div class="columna"><div class="foto"><img src="imagenes/brocheta.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Bocaditos de sandía, melón y jamón</div><p>
+                          <div class="texto">Bocaditos de sandía, melón y ja món en brochetas.Saludables, hidratantes y nutritivos.
+                      </div></div>
+                      
+                      <div class="columna"><div class="foto"><img src="imagenes/brochetas.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Brochetas de fruta</div><p>
+                          <div class="texto">Brochetas de fruta. Elige combinaciones divertidas. Puedes añadir un trocito de queso no graso para darle un toque original.
+                      </div></div>
+                      
+                      <div class="columna"><div class="foto"><img src="imagenes/crudites.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" > Tzatziqui con crudités</div><p>
+                          <div class="texto">Tzatziqui es una crema con yogur, pepino y menta. Elabórala y disfrútala con trozos de verduras crudas 
+                            como la zanahoria, el apio y el pimiento rojo.
+                      </div></div>
+                      
+                      <div class="columna"><div class="foto"><img src="imagenes/galletasoreo.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Wrap de pavo y cherry</div><p>
+                          <div class="texto">Elabora un rollito con tortitas de wrap integrales, introduce pavo, aguacate, tomates cherry y hojas de rúcula.
+                      </div></div>
+
+                      <div class="columna"><div class="foto"><img src="imagenes/galletasoreo.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="titulo" >Piruletas de tortilla de espinacas</div><p>
+                          <div class="texto">Elabora un rollito con tortitas de wrap integrales, introduce pavo, aguacate, tomates cherry y hojas de rúcula.
+                      </div></div>
+
                   </div>
 
                   <div class="tab-pane" id="item5">
@@ -487,8 +607,6 @@ if (window.pageYOffset > sticky) {
              fotologo2.parentNode.removeChild(fotologo2);
         }
 </script>
-
-
 
 
           <!-- Optional JavaScript -->
