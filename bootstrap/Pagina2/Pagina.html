@@ -211,12 +211,21 @@ position: relative;
 }
 .altura{
  position: relative;
- height: 736px; 
+ height: 726px; 
 }
 }
+
+@media (max-width : 411px)  {
+
+.altura{
+ position: relative;
+ height: 720px; 
+}
+}
+
   @media (max-width : 375px)  {    
 
-.sidebar1 {
+    .sidebar1 {
 width: 30%;
 }  
 .sticky {
@@ -233,25 +242,17 @@ position: relative;
 .columna{
 position: relative;
   width: 98%;
+  margin-top: 10px;
   padding: 10px; 
   left: 7px;
 }
 .texto{
-    font-family: "IndieFlower";
     font-size: 125%;
 }
 .titulo{
-    font-family: "SweetCookie";
     font-size: 225%;
 }
-.list> li{
-padding: 5px 0px 5px 5px;
-font-size: 80%;
-}
-.list> strong {
-padding: 5px 0px 5px 5px;
-font-size: 155%;
-}
+
 .logo2{
   position: relative;
   top: 30%;
@@ -261,18 +262,73 @@ font-size: 155%;
 }
 .altura{
  position: relative;
- height: 667px; 
+ height: 657px; 
 }
 }
 
   @media (max-width : 360px)  {
-.tab-content{
-  width: 65%;
+    .sidebar1 {
+width: 33%;
+}  
+    .altura{
+ position: relative;
+ height: 630px; 
+}
+.columna{
+position: relative;
+  width: 98%;
+  margin-top: 10px;
+  padding: 10px; 
+  left: 2px;
+}
+.logo2{
+  position: relative;
+  top: 30%;
+
+  width: 100%;
+  border: 0px solid black;
 }
   }
   @media (max-width : 320px)  {
-    .tab-content{
-  width: 60%;
+    .sidebar1 {
+      
+width: 35%;
+}  
+.sticky {
+  position: fixed;
+  width: 33%;
+} 
+.tab-content{
+  width: 65%;
+}
+.foto{
+position: relative;
+  width: 100%;
+}
+.columna{
+position: relative;
+  width: 93%;
+  margin-top: 10px;
+  padding: 10px; 
+  left: 2px;
+}
+.texto{
+    font-size: 125%;
+}
+.titulo{
+    font-size: 225%;
+}
+
+.logo2{
+  position: relative;
+  top: 30%;
+
+  width: 100%;
+  border: 0px solid black;
+}
+.altura{
+ position: relative;
+ height: 558px; 
 }
   }
   </style>
@@ -315,7 +371,7 @@ font-size: 155%;
                   </a>
                     <ul class="list">
                         <h3><strong>Tutoriales</strong></h3>
-                        <li data-target="#item6" data-toggle="tab">Desayunos</li>
+                        <li>Desayunos</li>
                         <li>Comidas</li>
                         <li>Cenas</li>
                         <li>Meriendas</li>
@@ -573,16 +629,14 @@ font-size: 155%;
                               está como favorita en nuestra página general de postres donde también están los “no saludables”.
                       </div></div>
 
-                      <div class="columna"><div class="foto"><img src="Imagenes/toertilla.jpg" class="img-responsive center-block" alt="Logo"></div><br>
+                      <div class="columna"><div class="foto"><img src="Imagenes/tortilla.jpg" class="img-responsive center-block" alt="Logo"></div><br>
                       <div class="titulo" >Piruletas de tortilla de espinacas</div><p>
                           <div class="texto">Elabora un rollito con tortitas de wrap integrales, introduce pavo, aguacate, tomates cherry y hojas de rúcula.
                       </div></div>
 
                   </div>
 
-                  <div class="tab-pane" id="item6">
-                      Its for item5
-                  </div> 
+
 
 </div>
 </div>
