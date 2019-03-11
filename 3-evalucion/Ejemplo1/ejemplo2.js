@@ -13,8 +13,9 @@ ejempl01
 
 
 z = -1
-while (z != 1000) {
-z = Math.floor(Math.random() * 5000001); 
+while (z != 40) {
+z = Math.floor(Math.random() * 51);  
 console.log ("El valor de z es:" + z)
-
+x = z+1;
+if (x != 40) { console.log(x = z+1)}
 }
