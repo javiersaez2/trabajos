@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+  </head>
+
+  <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid black;
+      float: left;
+      width: 180px;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="gallery">
+        <div class="desc">Martes</div>
+         <img src="imagenes/01.png">
+    </div>
+    
+    <div class="gallery">
+      <div class="desc">Miercoles</div>
+        <img src="imagenes/12.png">
+    
+    </div>
+    
+    <div class="gallery">
+        <div class="desc">Jueves</div>
+         <img src="imagenes/16.png">
+      
+    </div>
+
+
+
+
+    <script>
+
+
+$.getJSON( "web", function( data ) {
+    var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
+});pt>
+
+
+
+</body>
+</html>

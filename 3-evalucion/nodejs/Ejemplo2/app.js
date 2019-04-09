@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hola');
+  res.sendFile(__dirname + '/tiempo.html');
 });
 
 
@@ -22,8 +22,10 @@ tiempo = [
   {Dia: "Domingo", Nº:"24", cielo: "Nublado",Temperatura: 11},
   {Dia: "Lunes", Nº:"25", cielo: "Lluvia",Temperatura: 11}
   ]
+
   
-  app.get('/web', function (req, res) {
+  app.get('/tiempo', function (req, res) {
+
 
   var r=[];
   for (var i = 0; i < tiempo.length;i++
@@ -37,7 +39,17 @@ tiempo = [
   res.send(r)
 });
   
+app.get('/imagenes/16.png', function (req, res) { 
+  res.sendFile(__dirname + '/imagenes/01.png');
+});
 
+app.get('/imagenes/12.png', function (req, res) { 
+  res.sendFile(__dirname + '/imagenes/12.png');
+});
+
+app.get('/imagenes/01.png', function (req, res) { 
+  res.sendFile(__dirname + '/imagenes/16.png');
+});
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
