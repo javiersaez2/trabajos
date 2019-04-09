@@ -30,22 +30,16 @@ tiempo = [
   var r=[];
   for (var i = 0; i < tiempo.length;i++
     ){
-      if (tiempo[i].Dia  == "Sabado") {
-        r[r.length] = (tiempo[i].Dia + " " + tiempo[i].Nº + " " + tiempo[i].cielo + " " + tiempo [i].Temperatura)
+      if (tiempo[i].cielo  == "Lluvia") {
+        /imagenes/01.png
+        //r[r.length] = (tiempo[i].Dia + " " + tiempo[i].Nº + " " + tiempo[i].cielo + " " + tiempo [i].Temperatura)
         
        
        
   }}
   res.send(r)
 });
-  
-app.get('/imagenes/16.png', function (req, res) { 
-  res.sendFile(__dirname + '/imagenes/01.png');
-});
 
-app.get('/imagenes/12.png', function (req, res) { 
-  res.sendFile(__dirname + '/imagenes/12.png');
-});
 
 app.get('/imagenes/01.png', function (req, res) { 
   res.sendFile(__dirname + '/imagenes/16.png');
